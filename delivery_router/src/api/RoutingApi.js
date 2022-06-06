@@ -39,7 +39,8 @@ const fetchDirections = async ( deliveriesRoute, token ) => {
       'Authorization': routeKey.key
     },
     body: JSON.stringify({
-      coordinates: deliveriesRoute
+      coordinates: deliveriesRoute,
+      units: 'mi'
     })
   })
 }
@@ -63,7 +64,6 @@ const jobsSetup = (selectedDeliveries) => {
     location: [parseFloat(delivery.address.longitude), parseFloat(delivery.address.latitude)]
   })
   )
-  console.log(JSON.stringify(jobs))
   return jobs
 }
 

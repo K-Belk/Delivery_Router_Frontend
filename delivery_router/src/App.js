@@ -7,6 +7,7 @@ import RoutingContextProvider from './contexts/RoutingContext';
 import HomePage from './pages/HomePage';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import ProtectedRoute from './components/Protected/Protected';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function App() {  

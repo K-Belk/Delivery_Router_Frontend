@@ -60,6 +60,8 @@ color: #ffffff;
 #toggle {
   background-color: #ea0a8e;
   border: #ea0a8e;
+  font-size: 22px;
+
 }
 
 .checkbox {
@@ -92,3 +94,15 @@ color: #ffffff;
   border: 2px solid #ea0a8e;
 } 
 
+#accord-top {
+  background: black;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+#accord-content {
+  padding: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+}

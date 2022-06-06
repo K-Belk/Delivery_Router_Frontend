@@ -2,23 +2,7 @@
   font-size: 12px;
   background:aqua;
 }
-/* .modal > .header {
-  width: 100%;
-  border-bottom: 1px solid gray;
-  font-size: 18px;
-  text-align: center;
-  padding: 5px;
-}
-.modal > .content {
-  width: 100%;
-  padding: 10px 5px;
-}
-.modal > .actions {
-  width: 100%;
-  padding: 10px 5px;
-  margin: auto;
-  text-align: center;
-} */
+
 .close {
   cursor: pointer;
   position: absolute;
