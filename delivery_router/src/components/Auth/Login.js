@@ -17,7 +17,7 @@ const Login = () => {
     }
     onLogin(loginData)
     
-    return navigate('/locations/')
+    return navigate('/routing/')
   }
 
   return (

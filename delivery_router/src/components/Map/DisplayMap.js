@@ -45,7 +45,7 @@ const DisplayMap = (props) => {
           fillOpacity={1}
           >
           <Popup>
-          Eleanor Distrabution Center
+          Eleanor Distribution Center
         </Popup>
           </CircleMarker>
 

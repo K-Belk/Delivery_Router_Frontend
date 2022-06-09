@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import DeletePopup from '../DeletePopup/DeletePopup'
 import AddOrUpdatePopup from '../AddOrUpdatePopup/AddOrUpdatePopup'
+import LocationDeliveries from '../LocationDeliveries/LocationDeliveries'
 
 const LocationDetail = (props) => {
 
@@ -31,7 +32,7 @@ const LocationDetail = (props) => {
   
       </div>
     <div className='body selection-list' >
-    Some delivery stuff
+      <LocationDeliveries locationDetails={locationDetails} />
     </div>
     
     </div>

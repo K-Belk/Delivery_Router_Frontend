@@ -27,3 +27,7 @@
 .list-line {
   color: #ea0a8e;
 }
+
+#popup {
+  width: fit-content;
+}

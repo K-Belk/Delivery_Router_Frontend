@@ -26,9 +26,28 @@ const fetchLogout = async (token) => {
   })
 }
 
+const fetchSignup = async (signupData) => {
+  const url = authBaseUrl + 'signup'
+  try {
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(signupData)
+  })
+  return response
+}
+catch (e) {
+  console.log(e)
+  return null
+}
+}
+
 const exportItems = {
   fetchLogin,
   fetchLogout,
+  fetchSignup,
 }
 
 export default exportItems

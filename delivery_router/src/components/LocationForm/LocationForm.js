@@ -53,7 +53,7 @@ const LocationForm = (props) => {
   }
 
   return (
-    <div className='form'>
+    <div id="forms" >
       <Form onSubmit={handleSubmit} onChange={handleChange} >
       <Form.Group className="mb-3" >
         <Form.Label>Location Name</Form.Label>
@@ -62,7 +62,7 @@ const LocationForm = (props) => {
     
       <Form.Group className="mb-3" >
       <Form.Label>Street</Form.Label>
-        <Form.Control type="text" placeholder="Street" name='street' defaultValue={props.locationDetails ? props.locationDetails.address.street : ''} />
+        <Form.Control id="form-content"  type="text" placeholder="Street" name='street' defaultValue={props.locationDetails ? props.locationDetails.address.street : ''} />
       </Form.Group>
     
       <Form.Group className="mb-3" >

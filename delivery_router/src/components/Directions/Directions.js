@@ -42,7 +42,3 @@ const Directions = (props) => {
 }
 
 export default Directions
-
-// <Accordion className='bg-dark' >
-// { displayDirections() }
-// </Accordion>

@@ -18,6 +18,7 @@ const AddOrUpdatePopup = (props) => {
         open={open} 
         closeOnDocumentClick 
         onClose={closeModal}
+        id='popup'
         >
       <a className="close" onClick={closeModal}>
             &times;

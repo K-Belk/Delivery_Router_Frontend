@@ -12,7 +12,7 @@ const LocationDetailPage = () => {
 
   const [locationDetails, setLocationDetails] = useState()
 
-  const { tokenOk, authToken } = useAuth()
+  const { authToken } = useAuth()
 
   
 

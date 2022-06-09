@@ -6,7 +6,8 @@ export const AuthContext = createContext()
 
 const AuthContextProvider = (props) => {
 
-  
+  const [signingup, setSigningup] = useState(false)
+
   
   const [authToken, setAuthToken] = useState(JSON.parse(sessionStorage.getItem('authToken')) || null)
   const [tokenExpire, setTokenExpire] = useState(JSON.parse(sessionStorage.getItem('tokenExpire')) || null)
@@ -18,6 +19,7 @@ const AuthContextProvider = (props) => {
   
   const handleLogin = async (loginData) => {
     const tokenData = await AuthenticationApi.fetchLogin(loginData)
+    console.log(tokenData)
     setAuthToken('token ' + tokenData.token)
     setTokenExpire(new Date(tokenData.expiry).getTime())
     
@@ -39,9 +41,13 @@ const AuthContextProvider = (props) => {
     }
   }
 
+
+
   const value = {
     authToken,
     tokenExpire,
+    signingup,
+    setSigningup,
     onLogin: handleLogin,
     onLogout: handleLogout,
     tokenOk: checkTokenExpiry,

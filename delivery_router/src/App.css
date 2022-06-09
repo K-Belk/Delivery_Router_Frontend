@@ -11,9 +11,19 @@
   
 }
 
-.form {
+#forms {
   margin-left: 39px;
   margin-right: 39px;
+  /* width: fit-content; */
+}
+
+#form-content {
+  width: 400px;
+}
+
+.login {
+  margin-left: 39px;
+  margin-right: 200px;
 }
 
 .map {

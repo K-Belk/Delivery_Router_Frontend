@@ -3,7 +3,7 @@ import DisplayMap from '../components/Map/DisplayMap'
 import LocationsApi from '../api/LocationsApi'
 import RoutingApi from '../api/RoutingApi'
 import RouteSelectionList from '../components/RouteSelectionList/RouteSelectionList'
-import { Button, Form } from 'react-bootstrap'
+import { Button, Col, Container, Form, Row } from 'react-bootstrap'
 import { RoutingContext } from '../contexts/RoutingContext'
 import useAuth from '../hooks/AuthHooks'
 import Directions from '../components/Directions/Directions'
@@ -65,13 +65,21 @@ const RoutingPage = () => {
     <div className='body' >
       <div onSubmit={handleRouting}>
         <DisplayMap latLng={latLng} locations={selectedDeliveries} directions={directions} />
-        {stepByStep && <Directions directions={stepByStep} />}
-        <Form className='selection-list' >
-          <RouteSelectionList locations={locations} />
-          <Button id='toggle' variant='primary' type='submit' className='selection-list' >
-          Route
-          </Button>
-        </Form>
+        <Container >
+          <Row >
+          <Col >
+            <Form className='selection-list' >
+              <RouteSelectionList locations={locations} />
+              <Button id='toggle' variant='primary' type='submit' className='selection-list' >
+              Route
+              </Button>
+            </Form>
+            </Col>
+            <Col >
+            {stepByStep && <Directions directions={stepByStep} />}
+          </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   )

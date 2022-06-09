@@ -11,7 +11,6 @@ const RouteSelection = (props) => {
 
   const handleChange = (event) => {
     let deliveries = [...selectedDeliveries]
-    // console.log(event.target.value)
     if (event.target.checked === true) {
       deliveries.push(location)
     } else {
